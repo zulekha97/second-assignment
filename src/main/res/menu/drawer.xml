@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/phone"/>
+
+    <item android:title="Registration"
+        android:id="reg"
+        android:icon="@drawable/reg"/>
+
+    <item android:title="View data"
+        android:id="view"
+        android:icon="@drawable/view"/>
+
+    <item android:title="Registration information"
+        android:icon="@drawable/reg_info"
+        android:id="reg_info"/>
+
+    <item android:title="Logout"
+        android:id="logout"
+        android:icon="@drawable/logout"/>
+</menu>

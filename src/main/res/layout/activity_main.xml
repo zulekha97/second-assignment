@@ -1,71 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.labone.MainActivity"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="22dp"
-        android:fontFamily="algerian"
-        android:text="Username" />
     <EditText
-        android:id="@+id/editUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:text=""
+        android:id="@+id/userName"
         android:hint="Username"
-        android:text="" />
-
-    <TextView
-        android:id="@+id/pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:textSize="22dp"
-        android:fontFamily="algerian"
-        android:text="Password" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.217" />
 
     <EditText
-        android:id="@+id/editPass"
-        android:hint="Password"
+        android:id="@+id/passWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="" />
-
-    <TextView
-        android:id="@+id/role"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="algerian"
-        android:textSize="22dp"
-        android:text="Role" />
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </Spinner>
-<!--    <resource >-->
-<!--        <strin-array >-->
-<!--            <item>Administrator</item>-->
-<!--            <item>Normal user</item>-->
-<!--            <item>Mananger</item>-->
-<!--            <item>Execute Director</item>-->
-<!--        </strin-array>-->
-<!--    </resource>-->
-
+        android:text=""
+        android:hint="Password"/>
 
     <Button
-        android:id="@+id/loginbtn"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="login" />
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>
